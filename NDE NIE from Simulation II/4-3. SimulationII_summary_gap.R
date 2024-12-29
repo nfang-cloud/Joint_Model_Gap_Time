@@ -100,7 +100,7 @@ sd=apply(allest,2,sd,na.rm=TRUE)
 cr=apply((abs(allest-rep(1,nrow(allest))%o%truevalue1)/allsd)<1.96,2,mean,na.rm=TRUE)
 
 ###might change file name to make it clear the parameter setting
-write.csv(rbind(truevalue1,bias,ese,sd,cr),"sim2gapres_log.csv")
+write.csv(rbind(truevalue1,bias,ese,sd,meSE,cr),"sim2gapres_log.csv")
 
 
 
